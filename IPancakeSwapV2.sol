@@ -1,17 +1,6 @@
 pragma solidity ^0.5.0;
 // Library Data Types 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  import "ipfs://QmNcHToNPH1SztytgaTmn2UfhA18wyLCo61LZ1Kaivaky4";
-/**
-     * @dev This function must be called only be the LENDING_POOL and takes care of repaying
-     * active debt positions, migrating collateral and incurring new V2 debt token debt.
-     *
-     * The array of flash loaned assets used to repay debts.
-     * The array of flash loaned asset amounts used to repay debts.
-     * The array of premiums incurred as additional debts.
-     * The address that initiated the flash loan, unused.
-     * The byte array containing, in this case, the arrays of aTokens and aTokenAmounts.
-     */
-
 contract ILendingPoolAddressesProvider {
     function getLendingPool() public view returns (address);
 
